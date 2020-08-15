@@ -1,3 +1,8 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -7,6 +12,19 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+header {
+  background: url(images/header-pizza.jpg);
+  height: 29.39453125vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
 }
 
 .logo-nav {
@@ -26,9 +44,10 @@ nav {
   opacity: 0.6;
 }
 
-section {
+.section-one {
   background-color: #f0f0e0;
   padding-bottom: 100px;
+  padding-top: 70px;
 }
 
 .title-section {
@@ -36,8 +55,6 @@ section {
   text-align: center;
   font-size: 42px;
   font-style: italic;
-  padding-top: 50px;
-  padding-bottom: 50px;
   color: #b10002;
   font-family: 'Lobster', cursive;
 }
@@ -45,6 +62,7 @@ section {
 .paragraph {
 display: flex;
 justify-content: space-around;
+padding-top: 50px;
 }
 
 .content {
@@ -66,4 +84,74 @@ justify-content: space-around;
   line-height: 28px;
   text-align: justify;
   font-family: 'Open Sans Condensed', sans-serif;
+}
+
+main {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.cardapio-content {
+  display: flex;
+  justify-content: center;
+}
+
+.cardapio-content:nth-child(2) {
+  padding-top: 60px;
+}
+
+.cardapio-item {
+  margin: 15px;
+  max-width: 20%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 7px;
+  box-shadow: -2px 10px 23px -15px rgba(0, 0, 0, 1);
+}
+
+.cardapio-image {
+  max-width: 40%;
+  border-radius: 50%;
+}
+
+.section-two {
+  background-color:#b10002;
+  padding: 90px 0 90px 0;
+}
+
+.tele-rede {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.telefones-contato {
+ /* background-color: green; */
+ display: flex;
+ justify-content: center;
+}
+
+.redes-sociais-block {
+  /* background-color: purple; */
+}
+
+.telefone {
+  width: 32px;
+  margin-right: 10px;
+}
+span {
+  color: #f0f0e0;
+  font-weight: bolder;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span:last-child {
+  padding-left: 40px;
+}
+.rede {
+  margin: 10px;
+  width: 32px;
 }
