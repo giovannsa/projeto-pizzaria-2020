@@ -180,5 +180,98 @@ display: flex;
 justify-content: center;
 color: #f0f0e0;
 font-size: 12px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .content {
+    max-width: 40%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .content {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+ .paragraph {
+   flex-direction: column;
+   align-items: center;
+ }
+.image {
+  transform: translate(0%, -25%);
+}
+.content {
+  max-width: 80%;
+}
+.paragraph-title {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.paragraph-text {
+  margin: auto;
+}
+.section-one {
+  padding-bottom: 0px;
+}
+.cardapio-content {
+  flex-direction: column;
+  align-items: center;
+}
+.cardapio-item {
+  max-width: 60%;
+  min-height: 200px;
+}
+.tele-rede {
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+@media only screen and (max-width: 640px) {
+  .cardapio-item {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .content{
+    padding: 20px;
+  }
+  .image{
+    max-width: 280px;
+    transform: translate(0%, -13%);
+  }
+  .paragraph-text {
+    max-width: 100%;
+  }
+  .paragraph-title {
+    font-size: 40px;
+    margin-bottom: 20%;
+  }
+  .cardapio-item {
+    min-height: 150px;
+  }
+span {
+  font-size: 16px;
+}
+.telefone,.rede{
+  width: 24px;
+}
+
+.section-one{
+  padding-top: 0px;
+}
+
+@media only screen and (max-width: 345px) {
+  .image{
+    max-width: 220px;
+    transform: translate(0%, -8%);
+  }
+  span:last-child{
+    padding-left: 10px;
+  }
 
 }
